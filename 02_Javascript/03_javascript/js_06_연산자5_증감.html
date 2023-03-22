@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+          // 증감 연산자 (증가연산자 와 감소 연산자)
+       
+         let n = 10;
+         //++n; //전치 ,  n = n + 1 또는  n+=1 동일
+          n++; //후치 ,   n = n + 1 또는  n+=1 동일
+         console.log(n);
+
+         // 주의 : 다른 연산자와 같이 사용할 때
+
+         let n2 =10;
+         // let result = ++n2;  //전치: 먼저 증가하고 나중에 할당  11 11
+         let result = n2++;     //후치: 먼저 할당하고 나중에 증가  10 11
+         console.log(result, n2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

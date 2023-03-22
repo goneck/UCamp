@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+            변수(variable)
+            1) var 특징
+                - 변수명 중복 가능
+                - 함수 스코프를 따른다. ==> 일반적인 block({})가 아닌 함수 block에만 적용
+                - 호이스팅(hoisting) ==> 변수를 가장 맨 처음 라인 으로 끌어올려서 재선언.
+ 
+                ==> 다른 프로그램언어와 호환성이 떨어짐. 따라서 let 키워드가 나옴. 
+
+        */
+
+         var age = 20;
+         console.log(age);
+
+         var age = "홍길동";
+         console.log(age);
+
+
+         if (true){
+            var n = 20;
+            console.log(n);
+        }
+        console.log(n);
+        
+        function fun(){
+             var n2 = 30;
+             console.log(n2);
+         }
+         // console.log(n2);  error
+         fun();
+
+         //호이스팅
+         function fun2(){
+            console.log(x);  //undefiend
+            var x = 10; //변수 선언
+            console.log(x);  // 20
+         }
+         fun2();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

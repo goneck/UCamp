@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+             반복 문
+            1) for문 : 반복회수를 쉽게 예측이 가능하다.
+            
+               for(초기값; 조건식; 증감식){
+
+                     문장1;
+                  if(조건식)break;      //반복문을 빠져나옴.
+                  if(조건식)continue;   // 반복해야되는 문장2 를 skip하고 다음 회차로 넘어감
+                     문장2;
+
+               }
+
+            2) while문: 반복회수를 쉽게 예측이 힘들때 사용. ( 무한루프 )
+
+
+               초기값;
+
+               while(조건식){
+                    증감식;
+                  if(조건식)break;      //반복문을 빠져나옴.
+                  if(조건식)continue;   // 반복해야되는 문장2 를 skip하고 다음 회차로 넘어감
+                    문장;
+               }
+
+
+             3) do~while문: 조건식의 결과가 상관없이 무조건 한번은 실행됨.
+             
+                초기값;
+                do{
+                   증감식;
+                   문장;
+                }while(조건식);
+
+        */
+
+          //기본
+           for (let n = 1; n < 6; n++) {
+               console.log("hello");
+           }
+
+           let n = 1;
+           while(n > 6){
+                 n++;
+              console.log("hello2");
+           }
+       
+           let n2 = 1;
+           do{
+               n2++;
+              console.log("hello3");
+           }while(n2 > 6);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+            typeof 이용해서 변수에 저장된 데이터 타입 알아보기
+              - 문자열로 데이터타입을 알려준다.
+        */
+
+        let username = "홍길동";
+        let age = 20;
+        let height =  175.22;
+
+        let isMarried = true;
+
+        let phone = ["011","010"];
+
+        let addr = null;
+        let email = undefined;
+        let n = NaN;
+
+        let pets = {"cat":"야옹이","dog":"멍멍이"};
+
+        var fun = function (){}
+      
+        console.log(username,  typeof username);  // string
+
+        console.log(age,  typeof age);            // 'number'
+        console.log(height,  typeof height);       // 'number'
+
+        console.log(isMarried,  typeof isMarried);  // 'boolean'
+
+        console.log(phone,  typeof phone);         // 'object'
+        console.log(addr,  typeof addr);           // null 도 'object' 
+        console.log(email,  typeof email);         // 'undefined'
+        console.log(n,  typeof n);                 // 'number'
+        console.log(pets,  typeof pets);           // 'object'
+        console.log(fun,  typeof fun);              // 'function'
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

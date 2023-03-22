@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+          // 논리 연산자 ==> 실행 결과는 논리값
+         /*
+             논리값 && 논리값 ==> 그리고(and), 하나라도 false면 결과는 false
+             논리값 || 논리값 ==> 또는(or), 하나라도 true면 결과는 true
+             !논리값   ==> 부정(not) , true-> false,  false --> true
+         */
+
+         console.log( true && true );   // true
+         console.log( true && false );  // false
+         console.log( false && true );   // false
+         console.log( false && false );  // false
+         console.log("###################################")
+         console.log( true || true );   // true
+         console.log( true || false );  // true
+         console.log( false || true );   // true
+         console.log( false || false );  // false   
+         console.log("###################################")
+         console.log(!true,  !false);
+
+
+         //실전
+         var n = 10;
+         // 문제:  n값이 20보다 크고 40보다 작냐?
+         console.log((n > 20)  &&  (n < 40))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

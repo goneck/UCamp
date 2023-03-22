@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+          // 비교 연산자 ==> 실행시 결과는 논리값으로 반환
+        
+          let n = 10;
+          let n2 = 5;
+
+          console.log( n == n2 );  // n이 n2와 같냐?  기준: n
+          console.log( n != n2 );  
+          console.log( n > n2 );  
+          console.log( n >= n2 );  
+          console.log( n < n2 );  
+          console.log( n <= n2 );  
+
+          // 추가1
+        
+          let m = "10";
+          
+          console.log("m==10", m == 10 );  // 값만 비교 == 는 equal 연산자
+          console.log("m===10", m === 10 );  // 값하고 타입까지 비교  === identical 연산자
+
+         // 추가2 - undefined 비교시 === 이용한다.
+
+          let y = undefined;
+          console.log( y == undefined )  // y값이 null이어도 undefied 비교하면 true
+          console.log( y === undefined )
+
+          // NaN ( Not a Number)
+          var k = Number.parseInt("10");   // 비정수데이터를 정수데이터로 변경
+          console.log("10" + 5);  // 105
+          console.log(k + 5);     // 15
+
+          var k2 = Number.parseInt("홍길동");
+          console.log(k2); // NaN
+          console.log(Number.isNaN(k2));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

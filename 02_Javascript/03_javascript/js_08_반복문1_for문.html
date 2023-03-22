@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+             반복 문
+            1) for문
+            
+               for(초기값; 조건식; 증감식){
+
+                     문장1;
+                  if(조건식)break;      //반복문을 빠져나옴.
+                  if(조건식)continue;   // 반복해야되는 문장2 를 skip하고 다음 회차로 넘어감
+                     문장2;
+
+               }
+
+        */
+          //기본
+           for (let n = 1; n < 6; n++) {
+               console.log("hello");
+           }
+
+           for (let n = 10; n > 5; n--) {
+               console.log("hello2");
+           }
+
+           for (let n = 1; n < 6; n+=2) {
+               console.log("hello3");
+           }
+
+           for (let n = 1, m=1; n < 6 && m < 4; n+=2,m++) {
+               console.log("hello4");
+           }
+
+           //중첩: 모든 제어문이 가능
+           for (let n = 1; n < 6; n++) {
+             for (let n2 = 1; n2 < 6; n2++) {
+               console.log("hello5");
+             }
+           }
+       
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
