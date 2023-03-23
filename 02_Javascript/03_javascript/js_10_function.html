@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+         // 함수 선언식
+
+         //1. 파라미터 없고 리턴값도 없는 형식
+         function fun(){
+            console.log("fun");    
+         }
+
+         //호출
+         fun();
+
+        //2. 파라미터 있고 리턴값도 없는 형식
+        //  인자값과 파라미터변수의 갯수가 일치하지 않아도 가능하다.
+        function fun2(n){
+            console.log("fun2", n);    
+         }
+
+         //호출
+         fun2(10);
+
+         function fun3(n, n2){
+            console.log("fun3", n, n2);    
+         }
+
+         //호출
+         fun3(10);
+
+         function fun4(n){
+            console.log("fun4", n);    
+         }
+
+         //호출
+         fun4(10, 20);
+
+
+         //2-1 :  default 파라미터
+         function xxx(n=1, n2=100){
+            console.log("xxx", n, n2);    
+         }
+
+         //호출
+         xxx();
+         xxx(10);
+        
+         //2-2 :  rest 파라미터
+         function yyy(...n){
+            console.log("yyy", n);    
+         }
+
+         //호출
+         yyy(10, 20);
+         yyy(10, 20,30,40,50);
+
+         function yyy2(x, ...n){
+            console.log("yyy2", x, n);    
+         }
+
+         //호출
+         yyy2(10, 20);
+         yyy2(10, 20,30,40,50);
+
+
+        //3. 파라미터 없고 리턴값 있는 형식
+        function fun8(){
+            console.log("fun8");    
+            return 100;
+         }
+
+         //호출
+         var result = fun8();
+         console.log(result);
+
+         //4. 파라미터 있고 리턴값 있는 형식
+        function fun9(n, n2){
+            console.log("fun9");    
+            return n+n2;
+         }
+
+         //호출
+         var result = fun9(10,20);
+         console.log(result);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

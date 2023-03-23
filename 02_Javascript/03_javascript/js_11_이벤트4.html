@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+        /*
+           onload 이벤트 핸들러
+            ==> 시스템이 발생되는 이벤트
+            ==> html문서가 브라우저에 화면에 보일때 ( ==> html이 모두 DOM으로 생성된 후) 이벤트가 발생됨.
+        */
+        function fun(){
+          console.log("fun", event);
+          var p = document.querySelector("p");
+          console.log(p);
+        }
+  
+     
+    </script>
+</head>
+<body onload="fun()">
+    <button onclick="fun()">fun</button>
+    <p>Hello</p>
+   
+</body>
+</html>

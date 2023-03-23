@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+             BOM ( Browser Object Model)
+             => 웹 브라우저를 open하면 자동으로 생성되는 객체 의미
+
+             1) 종류 5가지
+               Window ==>    var window = new Window();
+               Navigator ==>  var navigator = new Navigator();
+               Screen   ==>  var screen = new Screen();
+               Location  ==>  var location = new Location();
+               History   ==>  var history = new History();
+               
+            2) 사용할 때
+                 window ( 전역객체 ==> 속성 및 메서드 사용시 window. 없이 사용가능하다.)
+                 navigator : 웹 브라우저 정보
+                 screen    : 화면 정보
+                 location  : url 정보
+                 history   : 뒤로/앞으로 정보
+                
+        */
+             console.log(window);
+             console.log(window.navigator);
+             console.log(screen);
+             console.log(location);
+             console.log(history);
+    
+             //1. navigator : 웹 브라우저 정보
+             console.log(navigator.appName);
+             console.log(navigator.appVersion);
+             console.log(navigator.onLine);
+
+             //2 screen    : 화면 정보
+             console.log(screen.availHeight);
+             console.log(screen.availWidth);
+
+             // 3. location  : url 정보
+            function fun(){
+                location.href="http://www.google.com";
+            }         
+            function fun2(){
+                location.reload();
+            }  
+            //4. history 
+
+            //5. window
+    </script>
+</head>
+<body>
+    <button onclick="fun()">링크</button>
+    <button onclick="fun2()">새로고침</button>
+</body>
+</html>

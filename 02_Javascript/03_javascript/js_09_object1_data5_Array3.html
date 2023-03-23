@@ -63,6 +63,31 @@
             const fruits = ["Banana", "Orange", "Apple", "Mango"];
             let text = fruits.join(" and ");
             console.log(text);
+
+            //8. 정렬 
+            /*
+                 1) 종류
+                 오름차순(기본)
+                 내림차순
+                 2) 문자도 가능 ( 아스키코드값 )
+                    A: 65
+                    a: 97
+
+            */
+            var k = [9,3,4,5,1,6]
+            k.sort();
+            console.log("오름차순:", k);
+
+             //내림차순은 직접 구현
+            k.sort(function(a, b){return b-a});
+            console.log("내림차순:", k);
+
+
+            var k2 = [19,23,4,53,1,65] // 내부적으로 문자로 변경하고 비교
+            k2.sort(function(a, b){return a-b});
+            console.log("오름차순:", k2);
+            k2.sort(function(a, b){return b-a});
+            console.log("내림차순:", k2);
     </script>
 </head>
 <body>

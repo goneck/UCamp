@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+         // arrow 함수 ( => )
+         // 함수표현식의 간소하
+    
+          //1. 파라미터 없고 리턴값 없는 형식
+           var fun = function(){
+                console.log("fun");
+           };
+           fun();
+
+           //arrow
+           var fun =()=>{
+                console.log("arrow fun");
+           };
+           fun();
+
+
+           //2. 파라미터 있고 리턴값 없는 형식
+           var fun2 = function(n, n2=10){
+                console.log("fun2", n , n2 );
+           };
+           fun2(10);
+           fun2(10,20);
+
+           //arrow
+           var fun2 = (n, n2=10)=>{
+                console.log("arrow fun2", n , n2 );
+           };
+           fun2(10);
+           fun2(10,20);
+
+
+           //3. 파라미터 없고 리턴값 있는 형식
+           var fun3 = function(){
+                console.log("fun3");
+                return 100;
+           };
+           var result = fun3();
+           console.log(result);
+
+          //arrow
+           var fun3 = ()=>{
+                console.log("arrow fun3");
+                return 100;
+           };
+           var result = fun3();
+           console.log(result);
+
+          //arrow 에서 return 문장만 있으면 {} 와 return 키워드 생략
+           var fun3 = ()=>{
+                return 100;
+           };
+           var fun3 = ()=> 200;
+
+           var result = fun3();
+           console.log(result);
+
+           //4. 파라미터 있고 리턴값 있는 형식
+           var fun4 = function(n){
+                return n.length;
+           };
+           var result = fun4("hello");
+           console.log(result);
+
+           // arrow 만들기 ==> 파라미터 변수가 한개이면 () 생략 가능
+           var fun4 = n =>n.length;
+           var result = fun4("helloworld");
+           console.log(result);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

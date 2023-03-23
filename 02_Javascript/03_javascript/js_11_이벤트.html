@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+        function fun(){
+          console.log("fun");
+        }
+        function fun2(){
+          console.log("fun2");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fun()"  onmouseover="fun2()" onmouseleave="fun()">fun</button>
+    <button>fun2</button>
+    <input type="text" name="userid" onkeyup="fun()"><br>
+    <select name="xxx" onchange="fun()">
+       <option>A</option>
+       <option>B</option>
+    </select>
+</body>
+</html>

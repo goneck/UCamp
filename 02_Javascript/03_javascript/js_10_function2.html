@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+         // 함수 표현식 ( 익명 함수) 
+         // 일급객체(first-class): 기능처리를 담당하는 함수(메서드)를 데이터로 간주하여 변수 및 변수에 사용가능한 위치에 함수를 사용할 수 있다.
+    
+          //1. 파라미터 없고 리턴값 없는 형식
+           var fun = function(){
+                console.log("fun");
+           };
+           fun();
+
+           //2. 파라미터 있고 리턴값 없는 형식
+           var fun2 = function(n, n2=10){
+                console.log("fun2", n , n2 );
+           };
+           fun2(10);
+           fun2(10,20);
+
+           //3. 파라미터 없고 리턴값 있는 형식
+           var fun3 = function(){
+                console.log("fun3");
+                return 100;
+           };
+           var result = fun3();
+           console.log(result);
+
+           //4. 파라미터 있고 리턴값 있는 형식
+           var fun4 = function(n){
+                console.log("fun4");
+                return n.length;
+           };
+           var result = fun4("hello");
+           console.log(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

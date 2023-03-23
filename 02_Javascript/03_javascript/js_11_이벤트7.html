@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+       /*
+           이벤트는 전파된다. (중첩레이아웃)
+           - 이벤트 전파방지  event.stopPropagation()
+       */
+    
+        function a(){
+          console.log("a");
+        }
+        function b(){
+         console.log("b");
+         event.stopPropagation();
+        }
+     
+    </script>
+</head>
+<body>
+    <div id="a" style="background-color: blue;" onclick="a()">
+       aaa
+       <div id="b" style="background-color: yellow;" onclick="b()">
+           bbb
+       </div>
+    </div>
+</body>
+</html>
