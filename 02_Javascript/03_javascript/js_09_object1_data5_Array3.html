@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+           객체(object)
+           1. 데이터 객체
+             1) 문자열 객체
+                - String 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+             2) 수치 객체
+                - Number 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+            
+             3) 날짜 객체
+                - Date 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)     
+                  
+             4) 불린 객체
+                - 기본적인 true/false 사용하는데,
+                  임의의 값도 논리값으로 사용이 가능하다.
+                  false 로 처리: 0, "", null, undefined, NaN (외우기)
+                  true 로 처리 : 5가지 제외한 나머지
+               
+                - Boolean 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)    
+
+             5) 배열 객체
+                - Array 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수) 
+        */
+
+           //4. 거꾸로
+        
+            var arr = [10,20,30];
+            arr.reverse()
+
+            console.log(arr);
+
+            //5. 일부분 반환
+        
+            var arr = [10,20,30,40,50,60];
+            // var sub = arr.slice(2); // start:2
+            var sub = arr.slice(2,5); // start:2 end: 4
+            console.log(sub);
+            
+            //6. 특정값의 위치 얻기
+            console.log(arr.indexOf(20));
+
+
+            //7. 연결 ==> 배열에 저장된 값(문자열)과 임의의 문자열과 연결
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            let text = fruits.join(" and ");
+            console.log(text);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

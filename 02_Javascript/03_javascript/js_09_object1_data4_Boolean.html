@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+           객체(object)
+           1. 데이터 객체
+             1) 문자열 객체
+                - String 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+             2) 수치 객체
+                - Number 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+            
+             3) 날짜 객체
+                - Date 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)     
+                  
+             4) 불린 객체
+                - 기본적인 true/false 사용하는데,
+                  임의의 값도 논리값으로 사용이 가능하다.
+                  false 로 처리: 0, "", null, undefined, NaN (외우기)
+                  true 로 처리 : 5가지 제외한 나머지
+               
+                - Boolean 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)    
+
+        */
+
+        //1. Boolean 생성방법
+            // 가. false로 처리된 값
+            console.log("0", new Boolean(0).valueOf());
+            console.log("", new Boolean("").valueOf());
+            console.log("null", new Boolean(null).valueOf());
+            console.log("undefined", new Boolean(undefined).valueOf());
+            console.log("NaN", new Boolean(NaN).valueOf());
+
+
+            // 나. true로 처리된 값
+            console.log("10", new Boolean(10).valueOf());
+            console.log("ㅁㄴㅇㄹ", new Boolean("ㅁㄴㅇㄹ").valueOf());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

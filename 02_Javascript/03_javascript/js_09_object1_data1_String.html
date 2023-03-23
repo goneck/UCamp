@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+           객체(object)
+           1. 데이터 객체
+             1) 문자열 객체
+                - String 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+
+
+        */
+
+        //1. 문자열 생성방법
+         
+        //가. new String(문자열)
+
+          let s = new String("hello");
+          console.log(s);
+          
+          //나.  문자열 ( 권장 )
+          let s2 = "HeLlO";
+          console.log(s2);
+          
+   
+       //2. 문자열 객체의 속성(property) 와 기능(method)
+
+       console.log("문자열 길이:", s2.length );
+       let x = s2.charAt(0);
+       console.log("특정문자 얻기:", s2.charAt(0) , x );
+
+       console.log("문자열 연결:", s2.concat("!!!") );
+       console.log("문자열 연결:", s2.concat("!!!", " ###") );
+
+       console.log("특정문자의 위치:", s2.indexOf('e') );
+       console.log("특정문자의 위치:", s2.indexOf('x') );  // 없으면 -1
+       
+       //부분열 : string.substr(start, length)
+       console.log("부분열(substr):", s2.substr(0,3) );
+       
+       //부분열 : string.substring(start, end)  end-1까지
+       console.log("부분열(substring):", s2.substring(0,3) );
+       
+       //대문자, 소문자
+       console.log("대문자:", s2.toUpperCase() );
+       console.log("소문자:", s2.toLowerCase() );
+       
+       // 구분자
+       var xxx = "AAA,BBB,CCC";   // csv (comma separate value) 포맷
+       
+       var arr = xxx.split(",");
+       console.log("구분자:", arr);
+       
+       // 치환
+       console.log("치환:", s2.replace('e','Z') );
+       
+       //공백제거 : 양쪽 공백 제거
+       var xxx2 = "     hello     ";
+       console.log(xxx2,  xxx2.length);
+       var xxx3 = xxx2.trim();
+       console.log(xxx3,  xxx3.length);
+       //메서드 체인
+       console.log(xxx3,  xxx2.trim().length);
+       console.log(xxx2.replace('e','Z').trim().substring(0,3));
+       
+       // 시작여부
+       var xxx3 = "123ABC";
+       console.log("시작여부:", xxx3.startsWith("12"));
+       console.log("시작여부:", xxx3.startsWith("AB"));
+       console.log("시작여부:", xxx3.startsWith("AB", 3)); // 3은 시작위치
+
+      // 종료여부
+       console.log("종료여부:", xxx3.endsWith("BC"));
+       console.log("종료여부:", xxx3.endsWith("AB"));
+       console.log("종료여부:", xxx3.endsWith("AB", 5));
+
+      //문자열 포함 여부
+      console.log("문자열 포함 여부:", xxx3.includes("BC"));
+      console.log("문자열 포함 여부:", xxx3.includes("ZBC"));
+
+      //문자열 반복
+      var xxx4 ="A";
+      console.log(xxx4.repeat())
+      console.log(xxx4.repeat(1))
+      console.log(xxx4.repeat(3))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

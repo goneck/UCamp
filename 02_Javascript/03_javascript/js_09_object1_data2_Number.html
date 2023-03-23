@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+           객체(object)
+           1. 데이터 객체
+             1) 문자열 객체
+                - String 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+             2) 수치 객체
+                - Number 객체 제공됨
+                  속성: property
+                  동작: 메서드(함수)
+
+        */
+
+        //1. 수치 생성방법
+  
+          let n = 10;
+          console.log(n);
+          
+         //가. 최대/최소
+          console.log("Number 최대값:", Number.MAX_VALUE);
+          console.log("Number 최소값:", Number.MIN_VALUE);
+     
+         //나. 문자 --> 수치로 변경
+         var x =    Number.parseInt("10");
+         var x2  =  Number.parseInt("10.00");
+         console.log(x, typeof x);
+         console.log(x2, typeof x2);
+
+
+         //다. 수치 --> 문자로 변경
+         var x3 = n.toString();
+         console.log(x3, typeof x3);
+
+
+         //라. 실수 자릿수 표현
+         var x4 = 13.45783;
+         console.log(x4.toFixed()); // 13
+         console.log(x4.toFixed(2)); // 13.45
+         console.log(x4.toFixed(3)); // 13.458 , round(반올림)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
