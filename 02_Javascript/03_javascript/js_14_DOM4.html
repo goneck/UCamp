@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ 
+        function chk(){
+            var chk = document.querySelector("#chk");
+            console.dir(chk);
+            if(chk.checked){
+                document.querySelector("#addr2").value = 
+                document.querySelector("#addr1").value;
+            }else{
+                document.querySelector("#addr2").value = "";
+            }
+        }
+    
+    </script>
+</head>
+<body>
+  
+    회원주소:
+     <input type="text" name="addr1" value="서울" id="addr1">
+ <br>
+ 동일하면 체크
+ <input type="checkbox" name="chk" onclick="chk()" id="chk">
+ <br>
+    배송주소:
+    <input type="text" name="addr2" value="" id="addr2">
+    
+
+</body>
+</html>

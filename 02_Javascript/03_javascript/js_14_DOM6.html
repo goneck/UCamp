@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+  
+        function x(){
+           var f = document.querySelector("form");
+           console.dir(f);
+           f.action="update.html";
+           f.submit();  // 실제로 요청
+        }
+        function x2(){
+           var f = document.querySelector("form");
+           console.dir(f);
+           f.action="delete.html";
+           f.submit();  // 실제로 요청
+        }
+        function x3(x){
+         if(x=='update'){
+
+         }else{
+            
+         }
+        }
+    </script>
+</head>
+<body>
+   <form action="external.js">
+      아이디:<input type="text" name="userid" id="userid">
+      <input type="button" value="수정" onclick="x()">
+      <input type="button" value="삭제" onclick="x2()">
+   </form>
+</body>
+</html>

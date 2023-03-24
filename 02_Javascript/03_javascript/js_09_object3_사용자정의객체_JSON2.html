@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+            사용자 정의 객체 ( JSON )
+                
+        */
+        
+        var name = "홍길동"; //변수
+
+        const person = {
+            name,  // property , name:name 동일 , key와 value가 같으면 key만 지정 가능
+            setName(n){this.name=n},  // function 생략 가능
+            getName:function(){return this.name}
+        }
+
+        console.log(person.name);
+        console.log(person["name"]); 
+        
+        person.setName("이순신");
+        console.log(person.name, person["name"], person.getName() );
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

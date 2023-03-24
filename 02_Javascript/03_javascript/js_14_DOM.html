@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function fun(){
+
+            console.log(document);
+            console.dir(document);
+
+            var p = document.getElementById("x");
+            console.log(p);
+            console.dir(p);
+
+            var p2 = document.querySelector("#x");
+            console.log(p2);
+            console.dir(p2);
+
+            console.log(p2.innerHTML); // html 포함해서 가져옴
+            console.log(p2.innerText); // html 제거하고 가져옴
+            console.log(document.querySelector("#x").innerText); // html 제거하고 가져옴
+
+        }
+
+        function change(){
+            var p2 = document.querySelector("#x2");
+            p2.innerText = "Happy";
+
+        }
+
+        function li_print(){
+            var li_arr = document.querySelectorAll("li");
+            for (var li of li_arr) {
+                // console.dir(li);
+                console.log(li.innerText);
+            }
+        }
+
+    </script>
+</head>
+<body onload="fun()">
+
+   <p id="x">
+     <span>Hello1</span>
+   </p>
+
+   <p id="x2">Hello2</p>
+   <button onclick="change()">값 변경</button>
+
+
+   <ul>
+    <li>10</li>
+    <li>20</li>
+    <li>30</li>
+   </ul>
+   <button onclick="li_print()">값출력</button>
+
+
+
+
+</body>
+</html>

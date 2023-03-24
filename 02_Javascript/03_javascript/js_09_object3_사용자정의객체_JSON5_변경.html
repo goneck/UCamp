@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+            사용자 정의 객체 ( JSON: 배열 및 중괄호 )
+            
+            문자열 JSON ------------- JSON 객체
+                        ------------ 
+         
+        */
+        
+         // 문자열JSON <--> JSON 객체
+         var arr = [10,20,30]
+
+         var arr_str = JSON.stringify(arr);  // JSON --> 문자열
+         console.log(arr, arr_str);
+         
+         var arr_json = JSON.parse(arr_str);  // 문자열 --> JSON
+         console.log(arr_json, arr_str);
+         
+         
+         var json = {name:"홍길동", age:20};
+         
+         var json_str = JSON.stringify(json);  // JSON --> 문자열
+         console.log(json, json_str);
+         
+         var json = JSON.parse(json_str);    // 문자열 --> JSON
+         console.log(json, json_str);
+         
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

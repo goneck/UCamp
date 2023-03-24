@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // https://reqres.in/api/users/2
+
+        var httpRequest;
+        function req(){
+
+         //1. XMLHttpRequest 생성
+          httpRequest = new XMLHttpRequest();
+          //2. 콜백 처리 ==> 서버에서 응답할 때 반응
+            httpRequest.onreadystatechange=callback;  //함수명만 사용
+         //3. open() ==> 요청 정보 설정
+            httpRequest.open("get", "https://reqres.in/api/users/3", true);
+         //4. send()
+             httpRequest.send();
+        }//end req
+ 
+        // 서버에서 응답시 실행됨.
+        function callback(){
+           console.log("callback");
+            //요청과 응답이 성공했을 때
+           if(httpRequest.readyState == 4 && httpRequest.status == 200){
+                var data = httpRequest.responseText;
+                // json변경
+                var json = JSON.parse(data);
+
+                var id = json.data.id;
+                var email = json.data.email;
+                var last_name = json.data.last_name;
+
+                var table = `
+                            <table border="1">
+                              <tr>
+                                <td>아이디</td>
+                                <td>이메일</td>
+                                <td>이름</td>
+                              </tr>
+                              <tr>
+                                <td>${id}</td>
+                                <td>${email}</td>
+                                <td>${last_name}</td>
+                              </tr>
+                            </table>
+                            `;
+               document.querySelector("#result").innerHTML=table;
+           }
+        }//end callback
+
+
+     
+    </script>
+</head>
+<body>
+   <button onclick="req()">Ajax요청</button>
+   <div id="result">
+
+   </div>
+</body>
+</html>

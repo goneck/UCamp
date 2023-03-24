@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+         // 콜백함수 ( 트리거 역할)
+
+           function x(){
+               console.log("x");
+           }
+           // 가. 함수 호출하는 형태로 사용됨
+           x();
+
+           // 나. 함수명에 해당하는 변수 사용됨
+           console.log(x);
+          
+           // 콜백 함수:  a() 호출해서 b() 또는 c() 실행하는 방식
+
+           function a(k){
+               k();
+           }
+
+           function b(){
+               console.log("b");
+           }
+
+           function c(){
+               console.log("c");
+           }
+
+
+           a(b);
+           a(c);
+
+           //함수 표현식 : x() 호출해서 y() 반응
+           var x = function(k){
+                k();
+           };
+
+           var y = function(){
+               console.log("y");
+           };
+
+           x(y);
+
+           //일반적인 처리 방법이다.
+           x(function(){
+               console.log("y");
+           });
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

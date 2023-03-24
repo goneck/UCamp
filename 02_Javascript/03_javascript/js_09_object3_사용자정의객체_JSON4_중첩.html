@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         
+        /*
+            사용자 정의 객체 ( JSON )
+            
+          중첩 가능
+        */
+        
+        var name = "홍길동"; //변수
+
+        //key값을 변수로 지정 가능 ==> [변수명]:값
+        var xyz = "phone";
+
+        const person = {
+            name,
+            [xyz]:{
+                mobile:"010",
+                home:"02"
+            },  
+            set username(n){this.name=n},  
+            get username(){return this.name}
+        }
+
+        console.log(person.phone.mobile);
+       
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

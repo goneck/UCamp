@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+       /*
+            template 리터럴 ( back-tick 기호)
+            1) 용도: 문자열 처리
+
+            2) 처리방법
+
+             가.  var s = 'ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ';  // 홑따옴표
+             나.  var s = "ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ";  // 쌍따옴표
+
+             다.  var s = `ㄴㅁㅇㄹㄴㅁㅇㄹㄴㅁㅇㄹㄴㅁㄹㅇ`;  //back-tick
+
+       */
+    
+          var s = "hello";
+          // s뒤에 "World 추가"
+          var result = s+"world";
+          // 샘플
+          var name = "홍길동";
+          var age = 20;
+          //var result = "이름:"+name+"  나이:"+age;
+          var result = `이름:${name} 나이:${age}`;
+          console.log(result);
+
+          // 샘플2
+          var str = `asdfdddddddddddddddddddddddddddddddddd 
+          ddddddddddddddddddddddddddddddddddddddddddddddddddd 
+          ddddddddddddddddddddddddddddddddd`;
+
+          //샘플 3 : html 태그 구현
+          var str = `<table> 
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>`;
+          console.log(str);
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

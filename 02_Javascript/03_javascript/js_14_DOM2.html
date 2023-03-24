@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function get(){
+            var userid = document.querySelector("#userid");
+            console.log(userid);
+            console.dir(userid);
+            console.log(userid.value); // input태그 및 모든 사용자 입력 태그는 value 속성 이용
+        }
+      
+        function fun(){
+             var select = document.querySelector(".kkk");
+             console.log(select.value);
+
+             document.querySelector("#userid").value=select.value;
+        }
+    </script>
+</head>
+<body>
+
+   아이디:<input type="text" name="userid" id="userid" class="xyz">
+   <button onclick="get()">값 출력</button>
+   <br>
+   <select onchange="fun()" class="kkk">
+      <option value="A1">A1</option>
+      <option value="A2">A2</option>
+      <option value="A3">A3</option>
+   </select>
+
+</body>
+</html>

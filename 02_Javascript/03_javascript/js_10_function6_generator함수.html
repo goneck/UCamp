@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+            // 1. 일반함수
+             function x(){
+                console.log("1");
+                console.log("2");
+                console.log("3");
+             }
+             var result = x();
+             console.log(result);
+
+            // 2. generator 함수는 호출시 실행안되고 대신 generator 객체를 반환한다.
+            //  next() 메서드를 호출해야 실행된다.
+            //  yield 단위로 끊어서 실행 가능하다.
+            function* x2(){
+                console.log("10");
+                yield console.log("20");
+                console.log("30");
+             }
+             var result = x2();
+             //console.log(result); // generator
+             result.next();
+             result.next();
+
+       
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
